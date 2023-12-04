@@ -70,4 +70,7 @@ ul, li {
   border-left: 1px solid grey;
   border-bottom: 1px solid grey;
   background-color: whitesmoke;
+}
+.main__alert {
+  background-color: #7575cf;
 }/*# sourceMappingURL=styles.css.map */

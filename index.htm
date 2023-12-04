@@ -45,6 +45,27 @@
             <h2 class="main__headline">Dashboard</h2>
             <div class="main__tab"></div>
         </div>
+
+        <div class="main__alert" id="alert">
+            <!-- JS will insert alert here -->
+        </div>
+
+        <section class="traffic">
+            <div class="traffic__header">
+            <h3>Traffic</h3>
+                <ul class="traffic__nav">
+                    <li class="traffic__nav-link">Hourly</li>
+                    <li class="traffic__nav-link">Daily</li>
+                    <li class="traffic__nav-link active">Weekly</li>
+                    <li class="traffic__nav-link">Monthly</li>
+                </ul>
+            </div>
+            <div class="widget-container-full">
+            <!-- element line graph will attach to -->
+            <canvas id="traffic-chart"></canvas>
+            </div>
+        </section>
     </main>
+    <script src="/JavaScript/script.js"></script>
 </body>
 </html>
