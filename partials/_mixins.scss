@@ -11,3 +11,16 @@
       @content;
     }
   }
+
+  @mixin border-bottom {
+    border-bottom: 1px solid grey;
+  }
+
+  @mixin background-svg {
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    background-color: $secondary-color;
+    width: 80px;
+    border-radius: 50%;
+  }
