@@ -1,0 +1,68 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  .svg {
+    width: 30px;
+    fill: white;
+  }
+
+.header {
+    color: white; 
+   
+     &__top-nav {
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+        grid-template-rows: 4rem;
+        align-items: center;
+        background-color: $secondary-color;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    &__side-border {
+        border-left: 1px solid white;
+        padding: 20px 0;
+    }
+
+    &__member-img {
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    &__student-name {
+        font-size: 1rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3rem;
+        gap: 10px;
+        justify-content: center;
+        background-color: $main-color;
+    }
+
+    &__nav-list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
