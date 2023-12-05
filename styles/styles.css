@@ -22,6 +22,7 @@ ul, li {
 .title {
   font-size: 1rem;
   margin: 0.5rem;
+  text-transform: uppercase;
 }
 
 .header {
@@ -184,6 +185,9 @@ ul, li {
   margin: 0.5rem;
 }
 
+.message {
+  border-bottom: 1px solid grey;
+}
 .message__container {
   display: grid;
   margin: 1rem;
@@ -216,4 +220,114 @@ ul, li {
 
 #messageField {
   padding-top: 0.5rem;
+}
+
+.settings {
+  display: grid;
+}
+.settings__form {
+  background-color: #F5F5F5;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+  color: grey;
+}
+.settings__toggle-1, .settings__toggle-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.settings__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  margin: 1rem;
+}
+.settings__button-primary {
+  background-color: #7575cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+}
+.settings__button-primary:hover {
+  background-color: #483d8b;
+}
+.settings__button-cancel {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+}
+.settings__button-cancel:hover {
+  background-color: darkgray;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 5rem;
+  height: 2rem;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+label .label-text {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label .label-text:first-child {
+  left: 10%;
+}
+
+label .label-text:last-child {
+  left: 90%;
+}
+
+input:checked + label {
+  background: #7575cf;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 5rem;
+}
+
+input:checked + label .label-text:first-child {
+  left: 90%;
+}
+
+input:checked + label .label-text:last-child {
+  left: 10%;
 }/*# sourceMappingURL=styles.css.map */
