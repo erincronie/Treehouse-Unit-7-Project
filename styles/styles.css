@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.svg {
+  width: 30px;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-transform: uppercase;
+}
+
 input[type=checkbox] {
   height: 0;
   width: 0;
@@ -61,33 +87,6 @@ input:checked + label .label-text:first-child {
 
 input:checked + label .label-text:last-child {
   left: 10%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-ul, li {
-  list-style: none;
-}
-
-.svg {
-  width: 30px;
-  fill: white;
-}
-
-.title {
-  font-size: 1rem;
-  margin: 0.5rem;
-  text-transform: uppercase;
 }
 
 .header {
@@ -181,37 +180,19 @@ ul, li {
 .social__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   background-color: #F5F5F5;
   border: 1px solid grey;
   border-radius: 5px;
   margin: 1rem;
   padding: 2rem;
 }
-.social__img-1 {
-  background-image: url("../svg/facebook.svg");
-  background-position: center;
-  background-repeat: none;
-  background-size: contain;
+.social__image-1, .social__image-2, .social__image-3 {
   background-color: #7575cf;
-  width: 80px;
-  border-radius: 50%;
-}
-.social__img-2 {
-  background-image: url("../svg/instagram.svg");
-  background-position: center;
-  background-repeat: none;
-  background-size: contain;
-  background-color: #7575cf;
-  width: 80px;
-  border-radius: 50%;
-}
-.social__img-3 {
-  background-image: url("../svg/twitter.svg");
-  background-position: center;
-  background-repeat: none;
-  background-size: contain;
-  background-color: #7575cf;
-  width: 80px;
+  fill: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
   border-radius: 50%;
 }
 .social__platform {
@@ -225,7 +206,7 @@ ul, li {
 }
 
 .members__container,
-.recent-activty__container {
+.recent-activity__container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -236,16 +217,16 @@ ul, li {
   border-bottom: 1px solid grey;
 }
 .members__profile-img,
-.recent-activty__profile-img {
+.recent-activity__profile-img {
   height: 50px;
   border-radius: 50%;
 }
 .members__text,
-.recent-activty__text {
+.recent-activity__text {
   margin: 0.5rem;
 }
 .members__name,
-.recent-activty__name {
+.recent-activity__name {
   text-align: center;
   margin: 0.5rem;
 }

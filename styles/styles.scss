@@ -1,33 +1,7 @@
 @import '../partials/mixins';
 @import '../partials/variables';
+@import '../partials/global';
 @import '../partials/custom-toggle';
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-ul, li {
-    list-style: none;
-}
-
-.svg {
-    width: 30px;
-    fill: white;
-}
-
-.title {
-    font-size: 1rem;
-    margin: .5rem;
-    text-transform: uppercase;
-}
 
 .header {
     color: white; 
@@ -135,6 +109,7 @@ ul, li {
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
         background-color: $form-fields;
         border: 1px solid grey;
         border-radius: 5px;
@@ -142,20 +117,10 @@ ul, li {
         padding: 2rem;
     }
 
-    &__img-1 {
-        background-image: url('../svg/facebook.svg');
-       @include background-svg;
-      
-    }
-
-    &__img-2 {
-        background-image: url('../svg/instagram.svg');
-        @include background-svg;
-    }
-
-    &__img-3 {
-        background-image: url('../svg/twitter.svg');
-        @include background-svg;
+    &__image-1,
+    &__image-2,
+    &__image-3 {
+      @include background-svg;
     }
 
     &__platform {
@@ -171,7 +136,7 @@ ul, li {
 }
 
 .members,
-.recent-activty  {
+.recent-activity  {
 
     &__container {
         display: grid;

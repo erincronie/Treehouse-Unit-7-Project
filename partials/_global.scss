@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.svg {
+    width: 30px;
+}
+
+
+.title {
+    font-size: 1rem;
+    margin: .5rem;
+    text-transform: uppercase;
+}
