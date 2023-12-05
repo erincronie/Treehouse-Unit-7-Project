@@ -24,3 +24,11 @@
     width: 80px;
     border-radius: 50%;
   }
+  
+  @mixin form-field {
+    background-color: $form-fields;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: .5rem;
+  }
+  

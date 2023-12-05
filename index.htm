@@ -80,30 +80,121 @@
                 </div>
         </section>
 
-        <h3 class="social__title title">Social Stats</h3>
-        <div class="social">
-            <div class="social__image-1 svg"></div>
-            <div class="social__text">
-                <p class="social__platform">Facebook</p>
-                <p class="social__stats">10,320</p>
+        <section class="social">
+            <h3 class="social__title title">Social Stats</h3>
+            <div class="social__container">
+                <div class="social__image-1 svg"></div>
+                <div class="social__text">
+                    <p class="social__platform">Facebook</p>
+                    <p class="social__stats">10,320</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="social">
-            <div class="social__image-2 svg"></div>
-            <div class="social__text">
-                <p class="social__platform">Instagram</p>
-                <p class="social__stats">16,445</p>
+            
+            <div class="social__container">
+                <div class="social__image-2 svg"></div>
+                <div class="social__text">
+                    <p class="social__platform">Instagram</p>
+                    <p class="social__stats">16,445</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="social">
-            <div class="social__image-3 svg"></div>
-            <div class="social__text">
-                <p class="social__platform">Twitter</p>
-                <p class="social__stats">22,189</p>
+            
+            <div class="social__container">
+                <div class="social__image-3 svg"></div>
+                <div class="social__text">
+                    <p class="social__platform">Twitter</p>
+                    <p class="social__stats">22,189</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="members">
+            <h3 class="members__title title">New Members</h3>
+                <div class="members__container">
+                        <img class="members__profile-img" src="./images/member-1.jpg" alt="profile pic">
+                    <div class="members__text">
+                        <p class="members__name">Victoria Chambers</p>
+                        <a class="members__email" href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p class="members__date">10/15/20</p>
+            </div>
+
+            <div class="members__container">
+                    <img class="members__profile-img" src="./images/member-2.jpg" alt="profile pic">
+                <div class="members__text">
+                    <p class="members__name">Dale Byrd</p>
+                    <a class="members__email" href="#">dale.byrd52@example.com</a>
+                </div>
+                    <p class="members__date">10/15/20</p>
+            </div>
+
+            <div class="members__container">
+                    <img class="members__profile-img" src="./images/member-3.jpg" alt="profile pic">
+                <div class="members__text">
+                    <p class="members__name">Dawn Wood</p>
+                    <a class="members__email" href="#">dawn.wood16@example.com</a>
+                </div>
+                    <p class="members__date">10/15/20</p>
+            </div>
+
+            <div class="members__container">
+                <img class="members__profile-img" src="./images/member-4.jpg" alt="profile pic">
+            <div class="members__text">
+                <p class="members__name">Dan Oliver</p>
+                <a class="members__email" href="#">dan.oliver82@example.com</a>
+            </div>
+                <p class="members__date">10/15/20</p>
+            </div>
+        </section>
+
+        <section class="recent-activty">
+            <h3 class="recent-activty__title title">Recent Activity</h3>
+                <div class="recent-activty__container">
+                    <img class="recent-activty__profile-img" src="./images/member-1.jpg" alt="profile pic">
+                    <div class="recent-activty__text">
+                        <p class="recent-activty__name">Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                    </div>
+                        <p class="recent-activty__date">4 hours ago</p>
+                    </div>
+
+                <div class="recent-activty__container">
+                    <img class="recent-activty__profile-img" src="./images/member-2.jpg" alt="profile pic">
+                    <div class="recent-activty__text">
+                        <p class="recent-activty__name">Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                    </div>
+                    <p class="recent-activty__date">5 hours ago</p>
+                </div>
+
+                <div class="recent-activty__container">
+                    <img class="recent-activty__profile-img" src="./images/member-3.jpg" alt="profile pic">
+                    <div class="recent-activty__text">
+                        <p class="recent-activty__name">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                    </div>
+                    <p class="recent-activty__date">5 hours ago</p>
+                </div>
+
+                <div class="recent-activty__container">
+                    <img class="recent-activty__profile-img" src="./images/member-4.jpg" alt="profile pic">
+                    <div class="members__text">
+                        <p class="recent-activty__name">Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                    </div>
+                    <p class="recent-activty__date">1 day ago</p>
+                </div>
+        </section>
+
+        <section class="message">
+            <h3 class="message__title title">Message User</h3>
+                <form class="message__container widget-container">
+                <input type="text" placeholder="Search for user"
+                
+                class=" message__form form-field" id="userField">
+                
+                <textarea class="message__form-area form-area" placeholder="Message for user"
+                
+                id= "messageField" ></textarea>
+                
+                <button class="message__button button-primary" id="send" >Send</button>
+            </form>
+            </section>
     </main>
     <script src="/JavaScript/script.js"></script>
 </body>

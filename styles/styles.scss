@@ -88,7 +88,7 @@ ul, li {
     &__tab {
         border-left: 1px solid grey;
         border-bottom: 1px solid grey;
-        background-color: whitesmoke;
+        background-color: $form-fields;
     }
 
     &__alert {
@@ -117,7 +117,6 @@ ul, li {
         align-items: center;
         margin: 0 1rem;
     }
-
 }
 
 .daily {
@@ -129,13 +128,17 @@ ul, li {
 }
 
 .social {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: whitesmoke;
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin: 1rem;
-    padding: 2rem;
+    @include border-bottom;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: $form-fields;
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin: 1rem;
+        padding: 2rem;
+    }
 
     &__img-1 {
         background-image: url('../svg/facebook.svg');
@@ -163,5 +166,69 @@ ul, li {
         font-weight: 100;
         color: grey;
     }
+}
+
+.members,
+.recent-activty  {
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        @include border-bottom;
+    }
+
+    &__profile-img {
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    &__text{
+        margin: .5rem;
+    }
+
+    &__name {
+        text-align: center;
+        margin: .5rem;
+    }
+}
+
+.message {
+    
+
+    &__container {
+        display: grid;
+        margin: 1rem;
+    }
+
+    &__form {
+        @include form-field;
+        padding: 1rem .5rem;
+    }
+
+    &__form-area {
+        @include form-field;
+        padding: 3rem .5rem;
+    }
+
+    &__button {
+        background-color: $secondary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem .5rem;
+        margin: 1rem;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+}
+
+#messageField {
+    padding-top: .5rem;
 }
     
