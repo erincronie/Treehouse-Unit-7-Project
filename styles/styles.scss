@@ -1,27 +1,29 @@
+@import '../partials/viewports';
 @import '../partials/mixins';
 @import '../partials/variables';
 @import '../partials/global';
 @import '../partials/custom-toggle';
+
 
 .header {
     color: white; 
    
      &__top-nav {
         display: grid;
-        grid-template-columns: 2fr repeat(4, 1fr);
+        grid-template-columns: 4fr repeat(4, 4rem);
         grid-template-rows: 4rem;
         align-items: center;
         background-color: $secondary-color;
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1rem;
     }
 
     &__side-border {
         border-left: 1px solid white;
-        padding: 20px 0;
+        padding: 1.5rem .5rem;
     }
 
     &__member-img {
@@ -30,27 +32,34 @@
     }
 
     &__student-name {
-        font-size: 1rem;
+        font-size: .75rem;
     }
+}
+
+.navigation {
+    background-color: $main-color;
 
     &__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 3rem;
-        gap: 10px;
-        justify-content: center;
-        background-color: $main-color;
+            @include tablet {
+                grid-template-columns: 1fr;
+            } 
     }
 
     &__nav-list-item {
         display: grid;
         justify-content: center;
         align-items: center;
+            @include tablet {
+                margin: 1rem;
+            }
     }
 }
 
 .main {
-
+    display: grid;
     &__header {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -83,6 +92,7 @@
 }
 
 .traffic {
+    display: grid;
     @include border-bottom;
 
     &__nav {
@@ -99,11 +109,12 @@
     @include border-bottom;
 }
 
-.mobile-users {
+.mobile {
     @include border-bottom;
 }
 
 .social {
+    display: grid;
     @include border-bottom;
 
     &__container {
@@ -114,7 +125,7 @@
         border: 1px solid grey;
         border-radius: 5px;
         margin: 1rem;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     &__image-1,
@@ -136,7 +147,8 @@
 }
 
 .members,
-.recent-activity  {
+.activity  {
+    display: grid;
 
     &__container {
         display: grid;

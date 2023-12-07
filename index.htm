@@ -6,7 +6,7 @@
     <title>Unit 7!</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
+<body class="grid-container">
     <header class="header">
         <div class="header__top-nav">
             <h1 class="header__title">WebApp</h1>
@@ -15,31 +15,31 @@
             <img class="header__member-img" src="./images/member-1.jpg" alt="profile image">
             <p class="header__student-name">Student Name</p>
         </div>
-        <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__nav-list-item">
-                <a class="header__link" href="/">
-                  <img class="header__svg svg" src="./svg/home.svg" alt="home link">
+    </header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__nav-list-item">
+                <a class="navigation__link" href="/">
+                  <img class="navigation__svg svg" src="./svg/home.svg" alt="home link">
                 </a>
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__link" href="/">
-                  <img class="header__svg svg" src="./svg/bar-chart.svg" alt="chart link">
+              <li class="navigation__nav-list-item">
+                <a class="navigation__link" href="/">
+                  <img class="navigation__svg svg" src="./svg/bar-chart.svg" alt="chart link">
                 </a>
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__link" href="/">
-                  <img class="header__svg svg" src="./svg/members.svg" alt="members link">
+              <li class="navigation__nav-list-item">
+                <a class="navigation__link" href="/">
+                  <img class="navigation__svg svg" src="./svg/members.svg" alt="members link">
                 </a>
               </li>
-              <li class="header__nav-list-item">
-                <a class="header__link" href="/">
-                  <img class="header__svg svg" src="./svg/settings.svg" alt="settings link">
+              <li class="navigation__nav-list-item">
+                <a class="navigation__link" href="/">
+                  <img class="navigation__svg svg" src="./svg/settings.svg" alt="settings link">
                 </a>
               </li>
             </ul>
         </nav>
-    </header>
     <main class="main">
         <div class="main__header">
             <h2 class="main__headline">Dashboard</h2>
@@ -72,8 +72,8 @@
                 </div>
         </section>
 
-        <section class="mobile-users">
-            <h3 class="mobile-users__title title">Mobile Users</h3>
+        <section class="mobile">
+            <h3 class="mobile__title title">Mobile Users</h3>
                 <div class="widget-container-half">
                 <!-- element bar graph will attach to -->
                 <canvas id="mobile-users"></canvas>
@@ -158,38 +158,38 @@
             </div>
         </section>
 
-        <section class="recent-activity">
-            <h3 class="recent-activity__title title">Recent Activity</h3>
-                <div class="recent-activity__container">
-                    <img class="recent-activity__profile-img" src="./images/member-1.jpg" alt="profile pic">
-                    <div class="recent-activity__text">
-                        <p class="recent-activity__name">Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+        <section class="activity">
+            <h3 class="activity__title title">Recent Activity</h3>
+                <div class="activity__container">
+                    <img class="activity__profile-img" src="./images/member-1.jpg" alt="profile pic">
+                    <div class="activity__text">
+                        <p class="activity__name">Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
                     </div>
-                        <p class="recent-activity__date">4 hours ago</p>
+                        <p class="activity__date">4 hours ago</p>
                     </div>
 
-                <div class="recent-activity__container">
-                    <img class="recent-activity__profile-img" src="./images/member-2.jpg" alt="profile pic">
-                    <div class="recent-activity__text">
-                        <p class="recent-activity__name">Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                <div class="activity__container">
+                    <img class="activity__profile-img" src="./images/member-2.jpg" alt="profile pic">
+                    <div class="activity__text">
+                        <p class="activity__name">Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
                     </div>
-                    <p class="recent-activity__date">5 hours ago</p>
+                    <p class="activity__date">5 hours ago</p>
                 </div>
 
-                <div class="recent-activity__container">
-                    <img class="recent-activity__profile-img" src="./images/member-3.jpg" alt="profile pic">
-                    <div class="recent-activity__text">
-                        <p class="recent-activity__name">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                <div class="activity__container">
+                    <img class="activity__profile-img" src="./images/member-3.jpg" alt="profile pic">
+                    <div class="activity__text">
+                        <p class="activity__name">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
                     </div>
-                    <p class="recent-activity__date">5 hours ago</p>
+                    <p class="activity__date">5 hours ago</p>
                 </div>
 
-                <div class="recent-activity__container">
-                    <img class="recent-activity__profile-img" src="./images/member-4.jpg" alt="profile pic">
+                <div class="activity__container">
+                    <img class="activity__profile-img" src="./images/member-4.jpg" alt="profile pic">
                     <div class="members__text">
-                        <p class="recent-activity__name">Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                        <p class="activity__name">Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
                     </div>
-                    <p class="recent-activity__date">1 day ago</p>
+                    <p class="activity__date">1 day ago</p>
                 </div>
         </section>
 

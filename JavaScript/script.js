@@ -10,4 +10,5 @@ alertBanner.addEventListener('click', e => {
     if (element.classList.contains("alert-banner-close")) {
     alertBanner.style.display = "none"
     }
-    });
+});
+
