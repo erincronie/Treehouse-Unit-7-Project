@@ -10,7 +10,7 @@
    
      &__top-nav {
         display: grid;
-        grid-template-columns: 4fr repeat(4, 4rem);
+        grid-template-columns: 1fr repeat(4, 3rem);
         grid-template-rows: 4rem;
         align-items: center;
         background-color: $secondary-color;
@@ -23,7 +23,8 @@
 
     &__side-border {
         border-left: 1px solid white;
-        padding: 1.5rem .5rem;
+        padding: 1.5rem 0;
+        margin: 1rem;
     }
 
     &__member-img {
@@ -33,6 +34,7 @@
 
     &__student-name {
         font-size: .75rem;
+        width: 4rem;
     }
 }
 
@@ -45,6 +47,7 @@
         grid-template-rows: 3rem;
             @include tablet {
                 grid-template-columns: 1fr;
+                justify-content: center;
             } 
     }
 
@@ -60,6 +63,7 @@
 
 .main {
     display: grid;
+
     &__header {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -88,6 +92,7 @@
     &__alert-banner {
         display: flex;
         justify-content: space-between;
+        width: 99%;
     }
 }
 
@@ -105,13 +110,11 @@
     }
 }
 
-.daily {
-    @include border-bottom;
-}
-
+.daily,
 .mobile {
     @include border-bottom;
 }
+
 
 .social {
     display: grid;
@@ -148,17 +151,25 @@
 
 .members,
 .activity  {
-    display: grid;
 
     &__container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         justify-items: center;
         justify-content: center;
         margin: 1rem;
         padding: 1rem;
         @include border-bottom;
+            @include tablet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+    }
+
+    &__info-section {
+        @include tablet {
+            display: flex;
+        }
     }
 
     &__profile-img {
@@ -168,11 +179,18 @@
 
     &__text{
         margin: .5rem;
+            @include tablet {
+                margin: 1rem;
+            }
     }
 
     &__name {
         text-align: center;
         margin: .5rem;
+            @include tablet {
+                text-align: start;
+                margin: 0;
+            }
     }
 }
 
@@ -215,6 +233,7 @@
         @include form-field;
         padding: 1rem .5rem;
         color: grey;
+        width: 95%;
     }
 
     &__toggle-1,

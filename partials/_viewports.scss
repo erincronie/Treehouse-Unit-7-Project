@@ -51,11 +51,6 @@
         grid-template-columns: 1rem repeat(3, auto);
     }
 
-    .members__container, 
-    .activity__container {
-        display: flex;
-    }
-
 }
 
 @media (min-width: 1280px) {

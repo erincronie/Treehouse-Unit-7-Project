@@ -39,10 +39,6 @@
   .social {
     grid-template-columns: 1rem repeat(3, auto);
   }
-  .members__container,
-  .activity__container {
-    display: flex;
-  }
 }
 @media (min-width: 1280px) {
   .traffic, .social {
@@ -149,7 +145,7 @@ input:checked + label .label-text:last-child {
 }
 .header__top-nav {
   display: grid;
-  grid-template-columns: 4fr repeat(4, 4rem);
+  grid-template-columns: 1fr repeat(4, 3rem);
   grid-template-rows: 4rem;
   align-items: center;
   background-color: #7575cf;
@@ -160,7 +156,8 @@ input:checked + label .label-text:last-child {
 }
 .header__side-border {
   border-left: 1px solid white;
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 0;
+  margin: 1rem;
 }
 .header__member-img {
   width: 40px;
@@ -168,6 +165,7 @@ input:checked + label .label-text:last-child {
 }
 .header__student-name {
   font-size: 0.75rem;
+  width: 4rem;
 }
 
 .navigation {
@@ -181,6 +179,7 @@ input:checked + label .label-text:last-child {
 @media screen and (min-width: 768px) {
   .navigation__list {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 .navigation__nav-list-item {
@@ -221,6 +220,7 @@ input:checked + label .label-text:last-child {
 .main__alert-banner {
   display: flex;
   justify-content: space-between;
+  width: 99%;
 }
 
 .traffic {
@@ -236,10 +236,7 @@ input:checked + label .label-text:last-child {
   margin: 0 1rem;
 }
 
-.daily {
-  border-bottom: 1px solid grey;
-}
-
+.daily,
 .mobile {
   border-bottom: 1px solid grey;
 }
@@ -276,20 +273,28 @@ input:checked + label .label-text:last-child {
   color: grey;
 }
 
-.members,
-.activity {
-  display: grid;
-}
 .members__container,
 .activity__container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   justify-items: center;
   justify-content: center;
   margin: 1rem;
   padding: 1rem;
   border-bottom: 1px solid grey;
+}
+@media screen and (min-width: 768px) {
+  .members__container,
+  .activity__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .members__info-section,
+  .activity__info-section {
+    display: flex;
+  }
 }
 .members__profile-img,
 .activity__profile-img {
@@ -300,10 +305,23 @@ input:checked + label .label-text:last-child {
 .activity__text {
   margin: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .members__text,
+  .activity__text {
+    margin: 1rem;
+  }
+}
 .members__name,
 .activity__name {
   text-align: center;
   margin: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .members__name,
+  .activity__name {
+    text-align: start;
+    margin: 0;
+  }
 }
 
 .message {
@@ -353,6 +371,7 @@ input:checked + label .label-text:last-child {
   margin: 0.5rem;
   padding: 1rem 0.5rem;
   color: grey;
+  width: 95%;
 }
 .settings__toggle-1, .settings__toggle-2 {
   display: flex;
