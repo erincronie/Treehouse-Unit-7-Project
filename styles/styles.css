@@ -405,4 +405,8 @@ input:checked + label .label-text:last-child {
 }
 .settings__button-cancel:hover {
   background-color: darkgray;
+}
+
+#traffic-chart {
+  width: 95vw;
 }/*# sourceMappingURL=styles.css.map */
