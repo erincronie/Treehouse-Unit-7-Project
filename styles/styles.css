@@ -159,6 +159,12 @@ input:checked + label .label-text:last-child {
   padding: 1.5rem 0;
   margin: 0;
 }
+.header__notification-svg {
+  width: 36px;
+}
+.header__notification-svg:hover {
+  transform: scale(1.1);
+}
 .header__notification-alert {
   border: 2px solid greenyellow;
   border-radius: 50%;
