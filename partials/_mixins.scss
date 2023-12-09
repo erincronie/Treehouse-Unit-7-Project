@@ -13,7 +13,7 @@
   }
 
   @mixin border-bottom {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid gray;
   }
 
   @mixin background-svg {
@@ -27,7 +27,7 @@
   
   @mixin form-field {
     background-color: $form-fields;
-    border: 1px solid grey;
+    border: 1px solid gray;
     border-radius: 5px;
     margin: .5rem;
   }
