@@ -21,7 +21,8 @@
 }
 
 
-.widget-container-full, .widget-container-half {
+.widget-container-full, 
+.widget-container-half {
     width: 95vw;
 }
 
@@ -43,24 +44,39 @@
     }
 
     .main {
-        grid-template-columns: 50% ;
-        grid-template-columns: 1fr;
+        grid-template-columns: 50%;
     }
 
+    .traffic, 
     .social {
-        grid-template-columns: 1rem repeat(3, auto);
+        grid-column: 1 / span 2;
     }
 
+  
 }
 
 @media (min-width: 1280px) {
-    .traffic, .social {
-        grid-column: 1 / span 2;
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .members,
     .message {
         border-right: 1px solid lightgray;
+    }
+
+    .daily,
+    .members,
+    .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile,
+    .activity,
+    .settings {
+        grid-column: 2 / span 1;
     }
 }
 
