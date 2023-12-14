@@ -43,10 +43,6 @@
         width: 45vw;
     }
 
-    .main {
-        grid-template-columns: 50%;
-    }
-
     .upper-container {
         display: grid;
     }
@@ -55,41 +51,40 @@
     .social {
         grid-column: 1 / span 2;
     }
-
-    .daily,
-    .members,
-    .message {
-        grid-column: 1 / span 1;
-    }
-
-  
 }
 
 @media (min-width: 1280px) {
-
-    .lower-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    
+    .members-container,
+    .messages-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+          "members activity"
+          "message settings";
     }
+    
+      .members {
+        grid-area: members;
+      }
+    
+      .activity {
+        grid-area: activity;
+      }
+    
+      .message {
+        grid-area: message;
+      }
+    
+      .settings {
+        grid-area: settings;
+      }
+    
 
     .members,
     .message {
         border-right: 1px solid lightgray;
     }
-
-    .daily,
-    .members,
-    .message {
-        display: grid;
-        grid-column: 1 / span 1;
-    }
-
-    .mobile,
-    .activity,
-    .settings {
-        grid-column: 2 / span 1;
-    }
 }
-
-
 
