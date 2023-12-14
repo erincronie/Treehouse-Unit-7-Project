@@ -91,7 +91,7 @@
 .main {
     &__header {
         display: flex;
-        width: 95vw;
+        width: 90vw;
     }
 
     &__headline {
@@ -236,6 +236,11 @@
                 text-align: start;
                 margin: 0;
             }
+    }
+
+    &__arrow {
+        font-size: 2rem;
+        color: gray;
     }
 }
 

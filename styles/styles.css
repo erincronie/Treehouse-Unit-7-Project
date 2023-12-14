@@ -238,7 +238,7 @@ input:checked + label .label-text:last-child {
 
 .main__header {
   display: flex;
-  width: 95vw;
+  width: 90vw;
 }
 .main__headline {
   font-size: 1rem;
@@ -387,6 +387,11 @@ input:checked + label .label-text:last-child {
     text-align: start;
     margin: 0;
   }
+}
+.members__arrow,
+.activity__arrow {
+  font-size: 2rem;
+  color: gray;
 }
 
 .message {
