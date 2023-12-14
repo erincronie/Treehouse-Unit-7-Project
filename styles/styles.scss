@@ -323,11 +323,12 @@
 }
 
 canvas {
-    width: 90%;
+    width: 90vw;
 }
 
-
+#traffic,
 #daily-chart,
 #mobile-chart {
     margin: 1rem;
+    width: 90vw;
 }
