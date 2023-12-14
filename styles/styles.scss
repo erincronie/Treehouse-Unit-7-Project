@@ -1,9 +1,8 @@
-@import '../partials/viewports';
-@import '../partials/mixins';
-@import '../partials/variables';
-@import '../partials/global';
-@import '../partials/custom-toggle';
-
+@import './partials/viewports';
+@import './partials/mixins';
+@import './partials/variables';
+@import './partials/global';
+@import './partials/custom-toggle';
 
 .header {
     color: white; 
@@ -90,11 +89,10 @@
 }
 
 .main {
-    display: grid;
-
+    // display: grid;
     &__header {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
     }
 
     &__headline {

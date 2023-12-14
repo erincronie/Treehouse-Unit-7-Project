@@ -47,9 +47,19 @@
         grid-template-columns: 50%;
     }
 
+    .upper-container {
+        display: grid;
+    }
+
     .traffic, 
     .social {
         grid-column: 1 / span 2;
+    }
+
+    .daily,
+    .members,
+    .message {
+        grid-column: 1 / span 1;
     }
 
   
@@ -57,9 +67,9 @@
 
 @media (min-width: 1280px) {
 
-    .main {
-        display: grid;
-        grid-template-columns: 1fr;
+    .lower-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     .members,
@@ -70,6 +80,7 @@
     .daily,
     .members,
     .message {
+        display: grid;
         grid-column: 1 / span 1;
     }
 

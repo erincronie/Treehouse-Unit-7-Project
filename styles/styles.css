@@ -36,15 +36,23 @@
   .main {
     grid-template-columns: 50%;
   }
+  .upper-container {
+    display: grid;
+  }
   .traffic,
   .social {
     grid-column: 1/span 2;
   }
+  .daily,
+  .members,
+  .message {
+    grid-column: 1/span 1;
+  }
 }
 @media (min-width: 1280px) {
-  .main {
+  .lower-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .members,
   .message {
@@ -53,6 +61,7 @@
   .daily,
   .members,
   .message {
+    display: grid;
     grid-column: 1/span 1;
   }
   .mobile,
@@ -231,12 +240,9 @@ input:checked + label .label-text:last-child {
   }
 }
 
-.main {
-  display: grid;
-}
 .main__header {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 }
 .main__headline {
   font-size: 1rem;
