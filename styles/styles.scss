@@ -90,19 +90,20 @@
 
 .main {
     &__header {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        width: 95vw;
     }
 
     &__headline {
         font-size: 1rem;
-        margin: .5rem;
+        margin: 1rem;
     }
 
     &__tab {
         border-left: 1px solid gray;
         border-bottom: 1px solid gray;
         background-color: $form-fields;
+        width: 100vw;
     }
 
     &__alert {
@@ -248,21 +249,21 @@
 
     &__form {
         @include form-field;
-        padding: 1rem .5rem;
+            padding: 1rem .5rem;
     }
 
     &__form-area {
         @include form-field;
-        padding: 3rem .5rem;
+            padding: 3rem .5rem;
     }
 
     &__button {
         @include main-button;
-        padding: 1rem .5rem;
-        margin: 1rem;
-        &:hover {
-            background-color: $main-color;
-        }
+            padding: 1rem .5rem;
+            margin: 1rem;
+            &:hover {
+                background-color: $main-color;
+            }
     }
 }
 
